@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap/css/bootstrap.css">
+    <link rel="stylesheet" href="css/estilo.css">
+
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+        <div class="col-lg-6 mx-auto">
+        <h2 class="page-section-heading text-center text-uppercase
+        text-secondary">Cadastro</h2>
+        <form method="post" action="processa.php">
+        <div class="form-group">
+        <label for="nome">Nome</label>
+        <input type="text" class="form-control" id="nome"
+        name="nome" aria-describedby="nomeHelp" placeholder="Seu nome"
+        required >
+        <small id="nomeHelp" class="form-text text-muted">Digite
+        seu nome completo</small>
+        </div>
+        <div class="form-group">
+        <label for="nome">Email</label>
+        <input type="email" class="form-control" id="email"
+        name="email" aria-describedby="emailHelp" placeholder="Seu email"
+        required maxlength="100">
+        <small id="emailHelp" class="form-text text-muted">Nunca
+        vamos compartilhar seu email, com ninguém.</small>
+        </div>
+        <div class="control-group">
+            <label for="curso">Qual o seu curso?</label>
+            <br>
+            <select class="custom-select mr-sm-2" name="curso"
+            id="curso">
+            <option value="Análise de Sistemas">Análise de
+            Sistemas</option>
+            <option value="Letras">Letras</option>
+            <option value="Matemática">Matemática</option>
+            <option value="Quimica">Quimica</option>
+            </select>
+            </div>
+            <button type="submit" class="btn btn-primary">Enviar</button>
+            </form>
+            </div>
+            </div>
+            </div>
+</body>
+</html>
